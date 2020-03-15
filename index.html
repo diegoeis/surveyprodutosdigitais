@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>Livro Gestão moderna de Produtos Digitais</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+  <style type="text/css">
+    
+    *, body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font: 100% roboto, sans-serif;
+    }
+
+    body {
+      border-top: 90px solid #E9B435;
+      text-rendering: auto;
+      text-rendering: optimizeSpeed;
+      text-rendering: optimizeLegibility;
+      text-rendering: geometricPrecision;
+    }
+
+    .gm-container {
+      position: relative;
+      top: -70px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    header {
+      text-align: center;
+      max-width: 795px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      font-weight: 700;
+      font-size: 3.75em;
+      margin: 50px 0 30px;
+    }
+
+    h2 {
+      font-weight: 300;
+      font-size: 2.5em;
+      color: #737373; 
+    }
+
+    header img {
+      max-width: 80%;
+      margin: auto;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid rgba(0, 0, 0, .1);
+      background: none;
+      height: 1px;
+      display: block;
+      width: 100%;
+      margin: 100px 0;
+    }
+
+    h3 {
+      text-align: center;
+      font-size: 4.3em;
+      font-weight: 700;
+      margin-bottom: 50px;
+    }
+
+    p {
+      font-size: 1.25em;
+      font-weight: 300;
+      line-height: 1.6;
+      margin-bottom: 20px
+    }
+
+    .gm-btn-buy {
+      display: block;
+      width: 280px;
+      background-image: linear-gradient(-180deg, #FFFFFF 0%, #F3D67C 50%, #EDC86A 50%, #E2AD46 83%, #D9A53F 100%);
+      border-radius: 14px;
+      border: 2px solid #E2AD46;
+      padding: 10px 5px;
+      text-align: center;
+      font:700 1.5em Roboto, Sans-serif;
+      text-decoration: none;
+      color: #000;
+      margin: 40px auto;
+      transition: all .15s linear
+    }
+
+    .gm-btn-buy:hover {
+      background-image: linear-gradient(-180deg, #FFFFFF 0%, #F3D67C 8%, #EDC86A 50%, #E2AD46 83%, #D9A53F 100%);
+      background-color: #E2AD46;
+    }
+
+    section {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    section > div {
+      flex: 1;
+    }
+    section > div:first-child {
+      margin-right: 25px;
+      text-align: right;
+      flex-basis: 400px;
+      max-width: 450px;
+    }
+
+
+    #gm-about img {
+      max-width: 340px;
+    }
+
+    #gm-about div:first-child {
+      flex: 1 0 400px;
+      max-width: 400px;
+    }
+    #gm-about .gm-btn-buy { margin-right: 35px; }
+    #gm-forwho img {
+      max-width: 100%;
+    }
+    #gm-forwho div:first-child {
+      max-width: 600px;
+    }
+
+    #gm-summary {
+      display: flex;
+    }
+
+    #gm-summary ul {
+      font-size: 1em;
+      font-weight: 100;
+      list-style: none;
+    }
+
+    #gm-summary li {
+      margin-bottom: 3px;
+    }
+
+    #gm-summary li b {
+      display: block;
+      padding: 20px 0 3px;
+      font-weight: bold;
+    }
+
+    footer {
+      margin-top: 70px;
+      background: #3A3B39;
+      text-align: center;
+      color: #fff;
+    }
+
+    footer p {
+      font-size: 1em;
+      padding: 15px 0;
+    }
+
+    footer a {
+      color: #E9B435;
+    }
+
+    @media screen and (max-width: 700px) {
+      h1 {
+        font-size: 2em;
+        padding: 0 20px;
+      }
+
+      h2 {
+        font-size: 1.5em;
+      }
+
+      section > div {
+        display: block;
+        padding: 0 30px;
+      }
+
+      section > div:first-child {
+        text-align: center;
+      }
+
+      h3 {
+        font-size: 2.4em;
+      }
+
+      p {
+        font-size: 1em;
+      }
+      hr {
+        margin: 25px 0;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+<div class="gm-container">
+  <header>
+    <img src="images/hero.svg">
+    <h1>Livro Gestão moderna de produtos Digitais</h1>
+    <h2>O Produto Digital visto como um meio de entrega de valor para o usuário, não o fim.</h2>
+  </header>
+
+  <hr>
+
+    <h3>Sobre o Livro</h3>
+  <section id="gm-about">
+
+    <div class="gm-side">
+
+      <img src="images/book.png" alt="capa do livro Gestão Moderna de Produtos Digitais - imagem ilustrando a jornada de usuário">
+
+      <a href="#" class="gm-btn-buy">Compre agora</a>
+    </div>
+
+    <div class="gm-text">  
+      <p>Eu sei, por experiência própria, que trabalhar em um mercado tão emergente é difícil. Faltam mentores, falta conteúdo, falta um filtro que diz o que é certo e o que é errado. Ainda mais na profissão de Gestão de Produtos que é algo (nem) tão novo, principalmente aqui no Brasil.</p>
+
+      <p>Entre 2015 e 2019 uma demanda enorme em busca de Product Managers explodiu no Brasil, principalmente nas grandes capitais. Não que já não houvesse esse tipo de profissão aqui no Brasil, pelo contrário, empresas como Locaweb e várias startups que já trabalhavam corretamente com Scrum, demandavam pelo menos a necessidade de ter Product Owners no time. </p>
+
+      <p>Esse crescimento fez com que profissionais que acabaram de entrar no mercado se preocupassem apenas em construir, entregar, monitorar métricas e gerir expectativas de usuários e negócios. O mercado não parou para entender como os gestores de produtos de sucesso entregam de valor de forma consistente, tendo em vista uma visão macro do posicionamento do Produto em um ecossistema integrado com outros atores e principalmente com as pessoas.</p>
+
+      <p>Nesse livro tentei expor como o Produto é apenas um transporte para a entrega de valor para o usuário e para o negócio, mostrando também como eu tento realizar esse resultado com um pensamento encadeado de gestão de Produto, que começa no serviço e termina nas entregas do time.</p>
+    </div>
+
+  </section>
+
+  <hr>
+
+
+    <h3>Para quem é?</h3>
+  <section id="gm-forwho">
+
+    <div class="gm-side">
+
+      <img src="images/pm.jpg" alt="Imagem de uma Product Manager">
+
+    </div>
+
+    <div class="gm-text">  
+      <p>Principalmente Product Managers. Mas não apenas. Eu estou falando sobre gestão de produtos digitais nesse livro e a pessoa que está diretamente ligada com essa responsabilidade é quem exerce o papel de Product Manager. Contudo, outros produteiros como Designers, Desenvolvedores, Dados e outras especialidades podem se interessar por todos os assuntos abordados no livro.</p>
+
+      <p>A pessoa que gere o produto não é responsável sozinha pela construção do Produto, pelo contrário, ela apenas agrega e integra todas as pessoas que fazem parte do processo de construção e manutenção de um produto digital, que tem por sua obrigação entregar valor para o negócio e para os usuários. Portanto,  esse livro pode e deve ser lido por Product Managers, mas também por qualquer pessoa que esteja envolvida no processo de construção de um produto.</p>
+
+      <a href="#" class="gm-btn-buy">Compre agora</a>
+
+    </div>
+
+  </section>
+  <hr>
+
+
+    <h3>Quem escreveu?</h3>
+  <section id="gm-author">
+
+    <div class="gm-side">
+
+      <img src="images/diego.jpg" alt="Foto do Diego Eis, autor do livro">
+
+    </div>
+
+    <div class="gm-text">  
+      <p>Eu trabalho com internet e tecnologia desde 2001. Comecei como desenvolvedor front-end (abri o tableless.com.br em 2003) e atualmente, depois de ter sido Diretor de Produtos Digitais na Jüssi, sou Head de Produtos Digitais na Sympla.</p>
+
+      <p>Eu sei, por experiência própria, que trabalhar em um mercado tão emergente é difícil. Faltam mentores, falta conteúdo, falta um filtro que diz o que é certo e o que é errado. Ainda mais na profissão de Gestão de Produtos que é algo (nem) tão novo, principalmente aqui no Brasil.</p>
+
+      <p>Espero que você possa se identificar e aprender como fazer uma gestão moderna de produtos digitais usando métodos, processos e perspectivas de macro de negócio por meio do conteúdo que escrevi nesse livro.</p>
+
+      <p>Fale comigo: <a href="https://twitter.com/diegoeis">@diegoeis</a> ou <a href="mailto:diegoeis@gmail.com">por email</a></p>
+
+      <a href="#" class="gm-btn-buy">Compre agora</a>
+      
+    </div>
+
+  </section>
+  <hr>
+
+
+    <h3>Conteúdo</h3>
+  <section id="gm-summary">
+
+        <ul>
+          <li><b>1 O Product Manager</b></li>
+          <li>1.1 O PMO (Project Manager Office)</li>
+          <li>1.2 O PO (Product Owner)</li>
+          <li>1.3 O PM (Product Manager) </li>
+          <li>1.4 Pontos importantes no escopo de um PM </li>
+          <li>1.5 Eficiência e Eficácia: o limite entre o PM e o Time </li>
+          <li>1.6 Os relacionamentos com outras áreas </li>
+          <li>1.7 Concluindo </li>
+          <li>1.8 Referências </li>
+
+          <li><b>2 Contextualizando melhor a questão de Produtos vs Projetos</b></li>
+          <li>2.1 Causalidade </li>
+          <li>2.2 Ambiente complexo </li>
+          <li>2.3 Meios para tentar controlar entender a complexidade </li>
+          <li>2.4 Evolução: a diferença básica entre produtos digitais e projetos </li>
+          <li>2.5 O mindset ágil também influencia muito </li>
+          <li>2.6 Concluindo </li>
+          <li>2.7 Referências </li>
+
+          <li><b>3 Entendendo o contexto de negócio</b></li>
+          <li>3.1 A Bolha dos anos 2000 </li>
+          <li>3.2 A Bolha dos Unicórnios </li>
+          <li>3.3 Comprar fidelidade ou crescimento? </li>
+          <li>3.4 Por que o seu produto existe? </li>
+          <li>3.5 Antes do OKR: SWOT + BSC </li>
+          <li>3.6 Últimas considerações: perguntas sobre dinâmicas internas e externas </li>
+          <li>3.7 Concluindo </li>
+          <li>3.8 Referências </li>
+
+          <li><b>4 Construindo um Serviço, não um Produto</b></li>
+          <li>4.1 O que é valor no marketing tradicional?</li>
+          <li>4.2 O valor está no uso?</li>
+          <li>4.3 O valor do seu produto digital está no serviço</li>
+          <li>4.4 O Produto como Serviço: Service-Dominant Logic</li>
+          <li>4.5 Produto como um meio e não o fim</li>
+          <li>4.6 Concluindo</li>
+          <li>4.7 Referências</li>
+
+          <li><b>5 Produto como Plataforma</b></li>
+          <li>5.1 Modelo linear tradicional</li>
+          <li>5.2 O modelo de plataforma</li>
+          <li>5.3 Tipos de Usuário</li>
+          <li>5.4 Efeito de Rede</li>
+          <li>5.5 Efeito de Rede em produtos digitais</li>
+          <li>5.6 Ciclo virtuoso aplicado nas funcionalidades do Produto</li>
+          <li>5.7 Poucas pessoas estão usando o produto, e aí?</li>
+          <li>5.8 Concluindo</li>
+          <li>5.9 Referências</li>
+
+          <li><b>6 Evolução contínua e identificação de oportunidade</b></li>
+          <li>6.1 Continuous Improvement: Kaizen</li>
+          <li>6.2 PDCA - A bala de prata. Real e oficial.</li>
+          <li>6.3 A Bolota do Discovery e Delivery</li>
+          <li>6.4 O Processo Dual Track: upstream e downstream</li>
+          <li>6.5 Introdução ao Continuous Discovery de Produtos</li>
+          <li>6.6 Gerenciando o produto por resultados (Outcomes) e não por entregas (Outputs)</li>
+          <li>6.7 Continuous Product Delivery</li>
+          <li>6.8 Aprender rápido para melhorar rápido</li>
+          <li>6.9 Referências</li>
+        </ul>
+        <ul>
+          <li><b>7 Métricas, Indicadores e Comportamento do Usuários</b></li>
+          <li>7.1 Métricas e Indicadores: qual a diferença</li>
+          <li>7.2 O comportamento do usuário gera métricas e indicadores</li>
+          <li>7.3 Engajamento e Retenção: qual a diferença?</li>
+          <li>7.4 Meu pensamento de trabalho com indicadores e métricas</li>
+          <li>7.5 Frameworks para Métricas e Indicadores</li>
+          <li>7.6 Vanity Metrics</li>
+          <li>7.7 Análise Cohort</li>
+          <li>7.8 Não existe uma North Star Metric (#IMHO)</li>
+          <li>7.9 Referências</li>
+
+          <li><b>8 Especificação de Produtos Digitais</b></li>
+          <li>8.1 O problema da visibilidade</li>
+          <li>8.2 Product Requirements Document</li>
+          <li>8.3 Press Release</li>
+          <li>8.4 O Roadmap</li>
+          <li>8.5 Um pouco sobre formatos de visibilidade de priorização</li>
+          <li>8.6 Concluindo</li>
+          <li>8.7 Referências</li>
+
+          <li><b>9 Agile para Product Manager</b></li>
+          <li>9.1 Metodologias Ágeis?</li>
+          <li>9.2 Seu papel em um time de software</li>
+          <li>9.3 O Básico do Agile</li>
+          <li>9.4 A importância da priorização</li>
+          <li>9.5 Concluindo</li>
+          <li>9.6 Referências</li>
+
+          <li><b>10 Ética em Produtos Digitais</b></li>
+          <li>10.1 O que é ética</li>
+          <li>10.2 O que Produtos Digitais tem a ver com Ética?</li>
+          <li>10.3 Tentando frear o impossível</li>
+          <li>10.4 Como criar produtos éticos?</li>
+          <li>10.5 Referências</li>
+
+          <li><b>11 Sobre times e squads</b></li>
+          <li>11.1 O que é uma Squad na organização militar?</li>
+          <li>11.2 O Squad no desenvolvimento de Software</li>
+          <li>11.3 Times</li>
+          <li>11.4 As principais semelhanças e diferenças entre Times</li>
+          <li>11.5 Trabalhando com Objetivos usando Squads e Times</li>
+          <li>11.6 Encontrei o modelo que funciona na sua empresa</li>
+          <li>11.7 Referências</li>
+
+          <li><b>12 Conteúdo exta</b></li>
+          <li>12.1 Perguntas para entrevistas de PMs</li>
+          <li>12.2 Fontes de conteúdo e ferramentas</li>
+          <li>12.3 Referências</li>
+        </ul>
+      
+
+  </section>
+
+</div>
+
+<footer>
+  <p>Escrito com ♥ por <a href="https://diegoeis.com">Diego Eis</a> | <a href="https://casadocodigo.com.br">Compre o livro</a> na Casa do Código</p>
+</footer>
+
+</body>
+</html>
