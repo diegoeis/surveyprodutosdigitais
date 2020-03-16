@@ -69,27 +69,34 @@
       margin: 0 auto;
     }
 
-    .gm-hero {
-      text-align: center;
-      max-width: 795px;
+    #gm-hero {
       margin: 0 auto;
+      display: flex;
+      justify-content: center;
+    }
+
+    #gm-hero img {
+      margin: auto;
+      max-width: 535px;      
+      flex: 1 0 535px;
+    }
+
+
+    #gm-hero div {
+      max-width: 577px;
     }
 
     h1 {
       font-weight: 700;
-      font-size: 3.75em;
+      font-size: 3.25em;
       margin: 50px 0 30px;
     }
 
     h2 {
       font-weight: 300;
-      font-size: 2.5em;
+      font-size: 2.2em;
+      max-width: 510px;
       color: #737373; 
-    }
-
-    .gm-hero img {
-      max-width: 80%;
-      margin: auto;
     }
 
     hr {
@@ -241,6 +248,23 @@
       cursor: pointer;
     }
 
+    .gm-btn-gotop {
+      float: right;
+      font-size: .9rem;
+      color: #000;
+      position: relative;
+      bottom: -85px;
+      right: 10px;
+      padding: 5px 10px;
+      background: #fff;
+    }
+
+    .gm-btn-gotop:hover {
+      background: #E9B435;
+      text-decoration: none;
+    }
+
+
     @media screen and (max-width: 700px) {
       h1 {
         font-size: 2em;
@@ -299,10 +323,12 @@
 
 <div class="gm-container">
 
-  <div id="gm-hero" class="gm-hero">
+  <div id="gm-hero">
+    <div>
+      <h1>Livro Gestão Moderna de Produtos Digitais</h1>
+      <h2>O Produto Digital visto como um meio de entrega de valor para o usuário, não o fim.</h2>
+    </div>
     <img src="images/hero.svg" title="imagem por vectorpouch" alt="imagem da capa por vectorpouch">
-    <h1>Livro Gestão Moderna de Produtos Digitais</h1>
-    <h2>O Produto Digital visto como um meio de entrega de valor para o usuário, não o fim.</h2>
   </div>
 
   <hr id="gm-about-hr">
@@ -327,6 +353,7 @@
     </div>
 
   </section>
+  <a href="#" class="gm-btn-gotop">&#8593; ir para o topo</a>
 
   <hr id="gm-forwho-hr">
 
@@ -350,6 +377,7 @@
     </div>
 
   </section>
+  <a href="#" class="gm-btn-gotop">&#8593; ir para o topo</a>
   <hr id="gm-author-hr">
 
 
@@ -363,7 +391,7 @@
     </div>
 
     <div class="gm-text">  
-      <p>Eu trabalho com internet e tecnologia desde 2001. Comecei como desenvolvedor front-end (abri o tableless.com.br em 2003) e atualmente, depois de ter sido Diretor de Produtos Digitais na Jüssi, sou Head de Produtos Digitais na Sympla.</p>
+      <p>Eu trabalho com internet e tecnologia desde 2001. Comecei como desenvolvedor front-end (abri o <a href="https://tableless.com.br/">tableless.com.br</a> em 2003) e atualmente, depois de ter sido Diretor de Produtos Digitais na Jüssi, sou Head de Produtos Digitais na Sympla.</p>
 
       <p>Eu sei, por experiência própria, que trabalhar em um mercado tão emergente é difícil. Faltam mentores, falta conteúdo, falta um filtro que diz o que é certo e o que é errado. Ainda mais na profissão de Gestão de Produtos que é algo (nem) tão novo, principalmente aqui no Brasil.</p>
 
@@ -376,6 +404,8 @@
     </div>
 
   </section>
+  <a href="#" class="gm-btn-gotop">&#8593; ir para o topo</a>
+
   <hr id="gm-summary-hr">
 
 
@@ -494,8 +524,10 @@
           <li>12.3 - Referências</li>
         </ul>
       
-
   </section>
+
+  <a href="#" class="gm-btn-gotop">&#8593; ir para o topo</a>
+
 <hr id="gm-form-hr">
 <section id="gm-form">
   <h3>Fique sabendo quando lançar!</h3>
