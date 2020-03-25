@@ -23,12 +23,16 @@
     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 </script>
 
-  <title>Livro Gestão moderna de Produtos Digitais</title>
+  <title>Survey do Mercado Brasileiro de Produtos Digitais - Edição 2020</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
   <style type="text/css">
     
+    :root {
+      --defaultcolor: #AB363E;
+    }
+
     *, body {
       margin: 0;
       padding: 0;
@@ -37,7 +41,6 @@
     }
 
     body {
-      margin-top: 100px;
       text-rendering: auto;
       text-rendering: optimizeSpeed;
       text-rendering: optimizeLegibility;
@@ -46,10 +49,10 @@
 
 
     header {
-      background: #E9B435;
+      background: var(--defaultcolor);
       padding: 15px 0;
       margin: 0 0 50px;
-      position: fixed;
+      /*position: fixed;*/
       top: 0;
       left: 0;
       width: 100%;
@@ -57,7 +60,7 @@
 
     .gm-menu {
       list-style: none;
-      display: flex;
+      display: none;
       flex-wrap: wrap;
       justify-content: center;
     }
@@ -101,6 +104,10 @@
       margin: auto;
       max-width: 535px;      
       flex: 1 0 535px;
+    }
+
+    #gm-hero .gm-btn-buy {
+      margin: 50px 0 0;
     }
 
 
@@ -148,21 +155,21 @@
     .gm-btn-buy, #gm-form input[type="submit"] {
       display: block;
       width: 280px;
-      background-image: linear-gradient(-180deg, #FFFFFF 0%, #F3D67C 50%, #EDC86A 50%, #E2AD46 83%, #D9A53F 100%);
+      background-image: linear-gradient(-180deg, #FFFFFF 0%, var(--defaultcolor) 50%, var(--defaultcolor) 50%, var(--defaultcolor) 83%, var(--defaultcolor) 100%);
       border-radius: 14px;
-      border: 2px solid #E2AD46;
+      border: 2px solid var(--defaultcolor);
       padding: 10px 5px;
       text-align: center;
       font:700 1.5em Roboto, Sans-serif;
       text-decoration: none;
-      color: #000;
+      color: #FFF;
       margin: 40px auto;
       transition: all .15s linear
     }
 
     .gm-btn-buy:hover, #gm-form input[type="submit"]:hover {
-      background-image: linear-gradient(-180deg, #FFFFFF 0%, #F3D67C 8%, #EDC86A 50%, #E2AD46 83%, #D9A53F 100%);
-      background-color: #E2AD46;
+      background-image: linear-gradient(-180deg, var(--defaultcolor) 0%, var(--defaultcolor) 30%, var(--defaultcolor) 50%, var(--defaultcolor) 83%, var(--defaultcolor) 100%);
+      background-color: var(--defaultcolor);
     }
 
     section {
@@ -349,31 +356,32 @@
 
   <div id="gm-hero">
     <div>
-      <h1>Livro Gestão Moderna de Produtos Digitais</h1>
-      <h2>O Produto Digital visto como um meio de entrega de valor para o usuário, não o fim.</h2>
+      <h1>Survey do Mercado Brasileiro de Produtos Digitais - Edição 2020</h1>
+      <h2>Esta é uma pesquisa independente da <a href="https://pmletter.email/">PM Letter</a> para descobrir o perfil do mercado brasileiro de produtos digitais.</h2>
+
+      <a href="https://forms.gle/rVz4VQ6L3u6kD7w96" target="_blank" class="gm-btn-buy">Responda a pesquisa</a>
+
+
     </div>
     <img src="images/hero.svg" title="imagem por vectorpouch" alt="imagem da capa por vectorpouch">
   </div>
 
   <hr id="gm-about-hr">
 
-    <h3 id="gm-about-title">Sobre o Livro</h3>
+    <h3 id="gm-about-title">Sobre a Pesquisa</h3>
   <section id="gm-about">
 
     <div class="gm-side">
 
-      <img src="images/book.png" alt="capa do livro Gestão Moderna de Produtos Digitais - imagem ilustrando a jornada de usuário">
+      <img src="images/pm-data.png" alt="Imagem de um Product Manager">
 
-      <a href="#gm-form" class="gm-btn-buy">Fique sabendo</a>
     </div>
 
     <div class="gm-text">  
+      <p>O mercado de de Produtos Digitais é relativamente novo aqui no Brasil. Na verdade, apenas o termo "Produtos Digitais" é novo. Nós já fazemos "Produtos" há muito tempo, mas antes nós falávamos que fazíamos sistemas, site, e-commerce, aplicativo para celular... Agora podemos sintetizar tudo isso em um termo comum para o mercado. Contudo, os profissionais que forma esse mercado tem mudado bastante, sobretudo quando se trata da gestão dos produtos digitais.</p>
 
-      <p>Entre 2015 e 2019 uma demanda enorme em busca de Product Managers explodiu no Brasil, principalmente nas grandes capitais. Não que já não houvesse esse tipo de profissão aqui no Brasil, pelo contrário, empresas como Locaweb e várias startups que já trabalhavam corretamente com Scrum, demandavam pelo menos a necessidade de ter Product Owners no time. </p>
+      <p>Queremos entender o como esse mercado está evoluindo e progredindo. Nessa pesquisa que você faz em 10 minutos, vai ajudar o mercado a entender qual a média de salário praticada no mercado, qual o desejo de viver fora do Brasil, qual a idade das pessoas, qual a confiança e segurança na empresa atual, qual o tamanho das empresas, qual a visão sobre trabalho remoto, qual o nível de graduação do mercado e vários outros assuntos.</p>
 
-      <p>Esse crescimento fez com que profissionais que acabaram de entrar no mercado se preocupassem apenas em construir, entregar, monitorar métricas e gerir expectativas de usuários e negócios. O mercado não parou para entender como os gestores de produtos de sucesso entregam de valor de forma consistente, tendo em vista uma visão macro do posicionamento do Produto em um ecossistema integrado com outros atores e principalmente com as pessoas.</p>
-
-      <p>Nesse livro tentei expor como o Produto é apenas um transporte para a entrega de valor para o usuário e para o negócio, mostrando também como eu tento realizar esse resultado com um pensamento encadeado de gestão de Produto, que começa no serviço e termina nas entregas do time.</p>
     </div>
 
   </section>
@@ -392,11 +400,9 @@
     </div>
 
     <div class="gm-text">  
-      <p>Principalmente Product Managers. Mas não apenas. Eu estou falando sobre gestão de produtos digitais nesse livro e a pessoa que está diretamente ligada com essa responsabilidade é quem exerce o papel de Product Manager. Contudo, outros produteiros como Designers, Desenvolvedores, Dados e outras especialidades podem se interessar por todos os assuntos abordados no livro.</p>
+      <p>Principalmente Product Managers. Mas não apenas. O Survey é sobre a área de Produtos Digitais, por isso é normal que direcionemos o foco da pesquisa para quem gere o produto em si. Contudo, outros produteiros como Designers, Desenvolvedores, Data Sciencists e outras especialidades estão mais do que convidados para participar do survey e deixar a pesquisa MUITO mais completa.</p>
 
-      <p>A pessoa que gere o produto não é responsável sozinha pela construção do Produto, pelo contrário, ela apenas agrega e integra todas as pessoas que fazem parte do processo de construção e manutenção de um produto digital, que tem por sua obrigação entregar valor para o negócio e para os usuários. Portanto,  esse livro pode e deve ser lido por Product Managers, mas também por qualquer pessoa que esteja envolvida no processo de construção de um produto.</p>
-
-      <a href="#gm-form" class="gm-btn-buy">Fique sabendo</a>
+      <p>A pessoa que gere o produto não é responsável sozinha pela construção do Produto, pelo contrário, ela apenas agrega e integra todas as pessoas que fazem parte do processo de construção e manutenção de um produto digital, que tem por sua obrigação entregar valor para o negócio e para os usuários.</p>
 
     </div>
 
@@ -405,7 +411,7 @@
   <hr id="gm-author-hr">
 
 
-    <h3 id="gm-author-title">Quem escreveu?</h3>
+  <h3 id="gm-author-title">Quem preparou a pesquisa?</h3>
   <section id="gm-author">
 
     <div class="gm-side">
@@ -417,14 +423,10 @@
     <div class="gm-text">  
       <p>Eu trabalho com internet e tecnologia desde 2001. Comecei como desenvolvedor front-end (abri o <a href="https://tableless.com.br/">tableless.com.br</a> em 2003) e atualmente, depois de ter sido Diretor de Produtos Digitais na Jüssi, sou Head de Produtos Digitais na Sympla.</p>
 
-      <p>Eu sei, por experiência própria, que trabalhar em um mercado tão emergente é difícil. Faltam mentores, falta conteúdo, falta um filtro que diz o que é certo e o que é errado. Ainda mais na profissão de Gestão de Produtos que é algo (nem) tão novo, principalmente aqui no Brasil.</p>
-
-      <p>Espero que você possa se identificar e aprender como fazer uma gestão moderna de produtos digitais usando métodos, processos e perspectivas de macro de negócio por meio do conteúdo que escrevi nesse livro.</p>
+      <p>Eu sou um inquieto. Sempre me envolvo em projetos paralelos, palestras, livros, blog etc. Não consigo ficar parado sem devolver para o mercado da minha profissão o que eu aprendo todos os dias. Essa é uma das formas de tentar ajudar a comunidade a crescer e a se desenvolver.</p>
 
       <p>Fale comigo: <a href="https://twitter.com/diegoeis">@diegoeis</a> ou <a href="mailto:diegoeis@gmail.com">por email</a></p>
 
-      <a href="#gm-form" class="gm-btn-buy">Fique sabendo</a>
-      
     </div>
 
   </section>
@@ -432,163 +434,15 @@
 
   <hr id="gm-summary-hr">
 
-
-    <h3 id="gm-summary-title">Conteúdo</h3>
-  <section id="gm-summary">
-
-        <ul>
-          <li><b>1 - O Product Manager</b></li>
-          <li>1.1 - O PMO (Project Manager Office)</li>
-          <li>1.2 - O PO (Product Owner)</li>
-          <li>1.3 - O PM (Product Manager) </li>
-          <li>1.4 - Pontos importantes no escopo de um PM </li>
-          <li>1.5 - Eficiência e Eficácia: o limite entre o PM e o Time </li>
-          <li>1.6 - Os relacionamentos com outras áreas </li>
-          <li>1.7 - Concluindo </li>
-          <li>1.8 - Referências </li>
-
-          <li><b>2 - Contextualizando melhor a questão de Produtos vs Projetos</b></li>
-          <li>2.1 - Causalidade </li>
-          <li>2.2 - Ambiente complexo </li>
-          <li>2.3 - Meios para tentar controlar entender a complexidade </li>
-          <li>2.4 - Evolução: a diferença básica entre produtos digitais e projetos </li>
-          <li>2.5 - O mindset ágil também influencia muito </li>
-          <li>2.6 - Concluindo </li>
-          <li>2.7 - Referências </li>
-
-          <li><b>3 - Entendendo o contexto de negócio</b></li>
-          <li>3.1 - A Bolha dos anos 2000 </li>
-          <li>3.2 - A Bolha dos Unicórnios </li>
-          <li>3.3 - Comprar fidelidade ou crescimento? </li>
-          <li>3.4 - Por que o seu produto existe? </li>
-          <li>3.5 - Antes do OKR: SWOT + BSC </li>
-          <li>3.6 - Últimas considerações: perguntas sobre dinâmicas internas e externas </li>
-          <li>3.7 - Concluindo </li>
-          <li>3.8 - Referências </li>
-
-          <li><b>4 - Construindo um Serviço, não um Produto</b></li>
-          <li>4.1 - O que é valor no marketing tradicional?</li>
-          <li>4.2 - O valor está no uso?</li>
-          <li>4.3 - O valor do seu produto digital está no serviço</li>
-          <li>4.4 - O Produto como Serviço: Service-Dominant Logic</li>
-          <li>4.5 - Produto como um meio e não o fim</li>
-          <li>4.6 - Concluindo</li>
-          <li>4.7 - Referências</li>
-
-          <li><b>5 - Produto como Plataforma</b></li>
-          <li>5.1 - Modelo linear tradicional</li>
-          <li>5.2 - O modelo de plataforma</li>
-          <li>5.3 - Tipos de Usuário</li>
-          <li>5.4 - Efeito de Rede</li>
-          <li>5.5 - Efeito de Rede em produtos digitais</li>
-          <li>5.6 - Ciclo virtuoso aplicado nas funcionalidades do Produto</li>
-          <li>5.7 - Poucas pessoas estão usando o produto, e aí?</li>
-          <li>5.8 - Concluindo</li>
-          <li>5.9 - Referências</li>
-
-          <li><b>6 - Evolução contínua e identificação de oportunidade</b></li>
-          <li>6.1 - Continuous Improvement: Kaizen</li>
-          <li>6.2 - PDCA - A bala de prata. Real e oficial.</li>
-          <li>6.3 - A Bolota do Discovery e Delivery</li>
-          <li>6.4 - O Processo Dual Track: upstream e downstream</li>
-          <li>6.5 - Introdução ao Continuous Discovery de Produtos</li>
-          <li>6.6 - Gerenciando o produto por resultados (Outcomes) e não por entregas (Outputs)</li>
-          <li>6.7 - Continuous Product Delivery</li>
-          <li>6.8 - Aprender rápido para melhorar rápido</li>
-          <li>6.9 - Referências</li>
-        </ul>
-        <ul>
-          <li><b>7 - Métricas, Indicadores e Comportamento do Usuários</b></li>
-          <li>7.1 - Métricas e Indicadores: qual a diferença</li>
-          <li>7.2 - O comportamento do usuário gera métricas e indicadores</li>
-          <li>7.3 - Engajamento e Retenção: qual a diferença?</li>
-          <li>7.4 - Meu pensamento de trabalho com indicadores e métricas</li>
-          <li>7.5 - Frameworks para Métricas e Indicadores</li>
-          <li>7.6 - Vanity Metrics</li>
-          <li>7.7 - Análise Cohort</li>
-          <li>7.8 - Não existe uma North Star Metric (#IMHO)</li>
-          <li>7.9 - Referências</li>
-
-          <li><b>8 - Especificação de Produtos Digitais</b></li>
-          <li>8.1 - O problema da visibilidade</li>
-          <li>8.2 - Product Requirements Document</li>
-          <li>8.3 - Press Release</li>
-          <li>8.4 - O Roadmap</li>
-          <li>8.5 - Um pouco sobre formatos de visibilidade de priorização</li>
-          <li>8.6 - Concluindo</li>
-          <li>8.7 - Referências</li>
-
-          <li><b>9 - Agile para Product Manager</b></li>
-          <li>9.1 - Metodologias Ágeis?</li>
-          <li>9.2 - Seu papel em um time de software</li>
-          <li>9.3 - O Básico do Agile</li>
-          <li>9.4 - A importância da priorização</li>
-          <li>9.5 - Concluindo</li>
-          <li>9.6 - Referências</li>
-
-          <li><b>10 - Ética em Produtos Digitais</b></li>
-          <li>10.1 - O que é ética</li>
-          <li>10.2 - O que Produtos Digitais tem a ver com Ética?</li>
-          <li>10.3 - Tentando frear o impossível</li>
-          <li>10.4 - Como criar produtos éticos?</li>
-          <li>10.5 - Referências</li>
-
-          <li><b>11 - Sobre times e squads</b></li>
-          <li>11.1 - O que é uma Squad na organização militar?</li>
-          <li>11.2 - O Squad no desenvolvimento de Software</li>
-          <li>11.3 - Times</li>
-          <li>11.4 - As principais semelhanças e diferenças entre Times</li>
-          <li>11.5 - Trabalhando com Objetivos usando Squads e Times</li>
-          <li>11.6 - Encontrei o modelo que funciona na sua empresa</li>
-          <li>11.7 - Referências</li>
-
-          <li><b>12 - Conteúdo exta</b></li>
-          <li>12.1 - Perguntas para entrevistas de PMs</li>
-          <li>12.2 - Fontes de conteúdo e ferramentas</li>
-          <li>12.3 - Referências</li>
-        </ul>
-      
+  <section id="gm-form">
+    <h3>Veja os dados!</h3>
+    <p>Assim que tivermos dados suficientes, vamos divulgar em um Data Studio. Fique ligado aqui e no perfil do <a href="https://twitter.com/diegoeis">Diego no Twitter</a>!</p>
   </section>
-
-  <a href="#" class="gm-btn-gotop">&#8593; ir para o topo</a>
-
-<hr id="gm-form-hr">
-<section id="gm-form">
-  <h3>Fique sabendo quando lançar!</h3>
-  <!-- Begin Mailchimp Signup Form -->
-<div id="mc_embed_signup">
-<form action="https://diegoeis.us4.list-manage.com/subscribe/post?u=0385e281381cd28a689766cb4&amp;id=620427e0f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-    <div id="mc_embed_signup_scroll">
-  
-<div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
-<div class="mc-field-group">
-  <label for="mce-EMAIL">Seu e-mail  <span class="asterisk">*</span>
-</label>
-  <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-</div>
-<div class="mc-field-group">
-  <label for="mce-FNAME">Primeiro nome  <span class="asterisk">*</span>
-</label>
-  <input type="text" value="" name="FNAME" class="required" id="mce-FNAME">
-</div>
-  <div id="mce-responses" class="clear">
-    <div class="response" id="mce-error-response" style="display:none"></div>
-    <div class="response" id="mce-success-response" style="display:none"></div>
-  </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_0385e281381cd28a689766cb4_620427e0f0" tabindex="-1" value=""></div>
-    <div class="clear"><input type="submit" value="Entrar na lista" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-    <small>Pode ficar tranquilo. Odeio spam. <br> Assim que o livro form lançado, eu te mando um aviso e depois a lista não será mais usada.</small>
-    </div>
-</form>
-</div>
-
-<!--End mc_embed_signup-->
-</section>
-
+  <iframe width="100%" height="900" src="https://datastudio.google.com/embed/reporting/0d1f7a62-2725-4146-8c9b-4a57e8e6ab5b/page/6zXD" frameborder="0" style="border:0" allowfullscreen></iframe>
 </div>
 
 <footer>
-  <p>Escrito com ♥ por <a href="https://diegoeis.com">Diego Eis</a></p>
+  <p>Feito com ♥ por <a href="https://pmletter.email">PM Letter</a>.</p>
 </footer>
 
 </body>
