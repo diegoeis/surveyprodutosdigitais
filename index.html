@@ -140,16 +140,21 @@
       line-height: 1.6;
       margin-bottom: 20px
     }
-
+    #gm-hero .gm-btn-buy {
+      margin-right: 20px;
+    }
     .gm-btn-buy, #gm-form input[type="submit"] {
-      display: block;
-      width: 280px;
-      background-image: linear-gradient(-180deg, #FFFFFF 0%, var(--defaultcolor) 50%, var(--defaultcolor) 50%, var(--defaultcolor) 83%, var(--defaultcolor) 100%);
+      display: inline-block;
+      width: 100%;
+      max-width: 200px;
+background: rgb(119,37,43);
+background: linear-gradient(0deg, rgba(119,37,43,1) 0%, rgba(171,54,62,1) 32%, rgba(251,211,214,1) 96%);
+
       border-radius: 14px;
       border: 2px solid var(--defaultcolor);
       padding: 10px 5px;
       text-align: center;
-      font:700 1.5em Roboto, Sans-serif;
+      font:700 1rem Roboto, Sans-serif;
       text-decoration: none;
       color: #FFF;
       margin: 40px auto;
@@ -157,8 +162,19 @@
     }
 
     .gm-btn-buy:hover, #gm-form input[type="submit"]:hover {
-      background-image: linear-gradient(-180deg, var(--defaultcolor) 0%, var(--defaultcolor) 30%, var(--defaultcolor) 50%, var(--defaultcolor) 83%, var(--defaultcolor) 100%);
-      background-color: var(--defaultcolor);
+background: rgb(119,37,43);
+background: linear-gradient(0deg, rgba(119,37,43,1) 0%, rgba(171,54,62,1) 75%);
+    }
+
+    .gm-btn-green {
+      border-color: rgba(2,0,36,1);
+      background: rgb(2,0,36);
+      background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    }
+
+    .gm-btn-green:hover {
+      background: rgba(2,0,36,1);
+      background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 11%, rgba(0,212,255,1) 87%);
     }
 
     section {
@@ -284,6 +300,35 @@
 
 
     @media screen and (max-width: 700px) {
+
+      .gm-container {padding: 0;}
+      #gm-hero {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+      }
+      #gm-hero img {
+        display: block;
+        max-width: 80%;
+        margin: 25px auto 0;
+      }
+
+      #gm-hero h1 {
+        padding: 0;
+        font-size: 1.7rem;
+        margin-bottom: 10px;
+      }
+
+      #gm-hero h2 {
+        font-size: 1.5rem;
+        margin-bottom: 35px;
+      }
+
+      #gm-hero .gm-btn-buy {
+        margin: 5px;
+      }
+
       h1 {
         font-size: 2em;
         padding: 0 20px;
@@ -350,6 +395,7 @@
 
       <a href="https://forms.gle/rVz4VQ6L3u6kD7w96" target="_blank" class="gm-btn-buy">Responda a pesquisa</a>
 
+      <a href="#gm-summary-hr" target="_blank" class="gm-btn-buy gm-btn-green">Veja as respostas</a>
 
     </div>
     <img src="images/hero.svg" title="imagem por vectorpouch" alt="imagem da capa por vectorpouch">
@@ -396,6 +442,18 @@
     </div>
 
   </section>
+
+ <a href="#" class="gm-btn-gotop">&#8593; ir para o topo</a>
+
+  <hr id="gm-summary-hr">
+
+  <section id="gm-form">
+    <h3>Veja os dados!</h3>
+    <p style="text-align: center;">Link direto do <a href="https://datastudio.google.com/u/0/reporting/0d1f7a62-2725-4146-8c9b-4a57e8e6ab5b">Data Studio está aqui</a>.</p>
+  </section>
+  <iframe width="100%" height="1800" src="https://datastudio.google.com/embed/reporting/0d1f7a62-2725-4146-8c9b-4a57e8e6ab5b/page/6zXD" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+
   <a href="#" class="gm-btn-gotop">&#8593; ir para o topo</a>
   <hr id="gm-author-hr">
 
@@ -419,15 +477,7 @@
     </div>
 
   </section>
-  <a href="#" class="gm-btn-gotop">&#8593; ir para o topo</a>
-
-  <hr id="gm-summary-hr">
-
-  <section id="gm-form">
-    <h3>Veja os dados!</h3>
-    <p>Assim que tivermos dados suficientes, vamos divulgar em um Data Studio. Fique ligado aqui e no perfil do <a href="https://twitter.com/diegoeis">Diego no Twitter</a>!</p>
-  </section>
-  <iframe width="100%" height="900" src="https://datastudio.google.com/embed/reporting/0d1f7a62-2725-4146-8c9b-4a57e8e6ab5b/page/6zXD" frameborder="0" style="border:0" allowfullscreen></iframe>
+ 
 </div>
 
 <footer>
